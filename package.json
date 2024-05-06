@@ -1,0 +1,20 @@
+{
+  "name": "goit-mcs-markup-fp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/goit-mcs-markup-fp/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.5.2",
+    "glob": "^8.1.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}
