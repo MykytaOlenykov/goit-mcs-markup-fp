@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: rgba(255, 255, 255, 0.5);
+
+  --text-color: rgba(255, 255, 255, 0.7);
+  --primary-text-color: #121417;
+  --secondary-text-color: rgba(18, 20, 23, 0.5);
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+
+  --accent-color: #bee8cc;
+  --primary-accent-color: #4dc274;
+  --secondary-accent-color: #38ae5f;
+
+  --primary-bg-color: #f3f5f6;
+  --secondary-bg-color: #d4fde1;
+
+  --backdrop-bg-color: rgba(18, 20, 23, 0.4);
+
+  --primary-line-color: rgba(18, 20, 23, 0.1);
+  --secondary-line-color: rgba(255, 255, 255, 0.1);
+
+  --radio-btn-color: #636366;
+
+  --hero-gradient: linear-gradient(
+    114deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+
+  --font-family: 'Manrope', sans-serif;
+}
