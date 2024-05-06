@@ -23,11 +23,31 @@ body {
   color: var(--primary-text-color);
 }
 
+.section-description {
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
   min-width: 320px;
   max-width: 375px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.description {
+  line-height: 171%;
+  text-align: center;
 }
 
 .underline {
@@ -51,6 +71,54 @@ body {
   border-radius: 8px;
 }
 
+.button {
+  padding: 14px 32px;
+
+  font-weight: 700;
+  line-height: 171%;
+  color: var(--primary-color);
+
+  background-color: var(--primary-accent-color);
+  border-radius: 12px;
+  border: none;
+
+  transition: color var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function),
+    border-color var(--duration) var(--timing-function);
+}
+
+.button--with-border {
+  padding: 13px 31px;
+
+  border: 1px solid var(--btn-border-color);
+}
+
+@media (hover: none) {
+  .button:active {
+    background-color: var(--secondary-accent-color);
+  }
+
+  .button--with-border:active {
+    color: var(--primary-accent-color);
+
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--secondary-accent-color);
+  }
+
+  .button--with-border:hover {
+    color: var(--primary-accent-color);
+
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section {
     padding: 50px 0;
@@ -61,15 +129,38 @@ body {
     line-height: 120%;
   }
 
+  .section-description {
+    margin-bottom: 64px;
+
+    font-size: 18px;
+    line-height: 167%;
+  }
+
   .container {
     padding: 0 32px;
     max-width: 768px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 150%;
   }
 
   .underline::after {
     bottom: -3px;
 
     height: 16px;
+  }
+
+  .button {
+    padding: 16px 32px;
+
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  .button--with-border {
+    padding: 15px 31px;
   }
 }
 

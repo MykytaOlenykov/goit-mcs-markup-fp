@@ -21,6 +21,8 @@
 
   --radio-btn-color: #636366;
 
+  --btn-border-color: rgba(255, 255, 255, 0.4);
+
   --hero-gradient: linear-gradient(
     114deg,
     rgba(0, 0, 0, 0.4) 0%,
@@ -28,4 +30,7 @@
   );
 
   --font-family: 'Manrope', sans-serif;
+
+  --duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
