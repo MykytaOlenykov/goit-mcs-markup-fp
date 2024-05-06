@@ -72,6 +72,7 @@ body {
 }
 
 .button {
+  display: block;
   padding: 14px 32px;
 
   font-weight: 700;
