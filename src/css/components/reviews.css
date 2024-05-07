@@ -1,0 +1,144 @@
+.p-reviews {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-bottom: 40px;
+}
+.title-reviews {
+    display: inline-block;
+    width: 100%;
+}
+.card-reviews {
+    border-radius: 16px;
+    background:  var(--primary-bg-color);
+    padding: 20px;
+}
+
+.card-reviews__student {
+    padding: 16px;
+    border-radius: 8px;
+    background: var(--primary-accent-color);
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-reviews__img {
+    border-radius: 50%;
+    margin-right: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.card-reviews__name {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px; 
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+}
+
+.card-reviews__who {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px; 
+    line-height: 1.33333;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.card-reviews__text {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 24px; 
+    line-height: 1.71429;
+    color: var(--secondary-text-color);
+    margin-left: 14px;
+    margin-right: 14px;
+
+}
+
+.reviews-divwithcards > :nth-child(n+2) {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews-divwithcards > :nth-child(2) {
+        display: block;
+    }
+    .reviews-divwithcards {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+    .title-reviews {
+        
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px; 
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        text-align: center;
+        
+    }
+
+    .p-reviews {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+
+        line-height: 30px; 
+        line-height: 1.66667;
+        text-align: center;
+        margin-bottom: 40px;
+}
+    .card-reviews {
+        border-radius: 30px;
+        padding: 32px 16px;
+        width: 336px;
+    }
+
+     .card-reviews__text {font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+        
+            line-height: 24px; 
+            line-height: 1.5;
+                        
+            }
+    .card-reviews__student {
+        margin-bottom: 32px;
+    }
+    .card-reviews {
+        width: calc((100%-32px)/2);}
+}  
+      
+
+
+@media screen and (min-width: 1280px)  {
+    .reviews-divwithcards > :nth-child(n) {
+        display: block;  }
+
+
+
+    .p-reviews {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px; 
+      display: block;
+      max-width: 647px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    .card-reviews {
+        width: calc((100%-64px)/3);}
+}
+
+
