@@ -1,0 +1,196 @@
+/* mobile 1x */
+
+.hero {
+  padding-block: 8px 21px;
+  color: var(--primary-color);
+}
+
+.hero__title {
+  margin-bottom: clamp(36px, 10.7vw, 40px);
+  font-size: 38px;
+  font-size: clamp(32px, 10.14vw, 38px);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    display: block;
+    max-width: 488px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    max-width: 564px;
+  }
+}
+
+.hero__title--accent {
+  color: var(--accent-color);
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  justify-content: center;
+
+  width: clamp(278px, calc(100vw - 40px), 335px);
+  height: clamp(604px, 189vw, 708px);
+  padding-inline: 20px;
+  padding-inline: clamp(16px, 5.334vw, 20px);
+  padding-bottom: 72px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 704px;
+    height: 857px;
+    padding: 260px 32px 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    width: 1152px;
+    height: 629px;
+    padding: 0 64px;
+    align-items: center;
+  }
+}
+
+.link__leave-an-application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 295px;
+  width: clamp(250px, 78.67vw, 295px);
+  height: 52px;
+}
+
+@media screen and (min-width: 768px) {
+  .link__leave-an-application {
+    width: 306px;
+    height: 60px;
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.hero__scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+
+  border-radius: 50%;
+  background-color: var(--primary-color);
+
+  transition: background-color var(--duration) var(--timing-function);
+}
+
+.hero__scroll:hover,
+.hero__scroll:focus {
+  transform: translateY(1px);
+  background-color: var(--primary-accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__scroll {
+    width: 48px;
+    height: 48px;
+    bottom: 32px;
+    right: 32px;
+  }
+}
+
+.hero__scroll--down {
+  fill: var(--primary-accent-color);
+  transition: fill var(--duration) var(--timing-function),
+    transform var(--duration) var(--timing-function);
+}
+
+.hero__scroll:hover .hero__scroll--down,
+.hero__scroll:focus .hero__scroll--down {
+  fill: var(--primary-color);
+}
+
+.hero__bg-image {
+  border-radius: 30px;
+  background: var(--hero-gradient),
+    url(../../img//hero/mob/hero-bg_mob@1x.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* mobile 2x */
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero__bg-image {
+    background: var(--hero-gradient),
+      url(../../img//hero/mob/hero-bg_mob@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* tablet 1x */
+
+@media screen and (min-width: 768px) {
+  .hero__bg-image {
+    background: var(--hero-gradient),
+      url(../../img/hero/tab/hero-bg_tab@1x.jpg) no-repeat;
+  }
+}
+
+/* tablet 2x */
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__bg-image {
+    background: var(--hero-gradient),
+      url(../../img/hero/tab/hero-bg_tab@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* desktop 1x */
+
+@media screen and (min-width: 1280px) {
+  .hero__bg-image {
+    background: var(--hero-gradient),
+      url(../../img/hero/desk/hero-bg_desk@1x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* desktop 2x */
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero__bg-image {
+    background: var(--hero-gradient),
+      url(../../img/hero/desk/hero-bg_desk@1x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
