@@ -1,19 +1,22 @@
 /* mobile 1x */
 
 .hero {
+  padding-top: 8px;
   padding-bottom: 40px;
   color: var(--primary-color);
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 32px 50px;
+    padding-top: 32px;
+    padding-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero {
-    padding: 36px 48px;
+    padding-top: 16px;
+    padding-bottom: 75px;
   }
 }
 
