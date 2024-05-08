@@ -54,11 +54,8 @@
   color: var(--text-color);
 }
 
-.button {
-  padding: 14px 77px;
-}
-.button--with-border {
-  padding: 14px 76px;
+.our-lessons-section-button {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,17 +89,14 @@
     line-height: 1.5;
     margin-bottom: 32px;
   }
-
-  .button {
-    padding: 16px 62px;
-  }
-
-  .button--with-border {
-    padding: 16px 61px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
+  .our-lessons-section-description {
+    width: 665px;
+    margin: 0 auto;
+  }
+
   .plan-cards {
     justify-content: center;
   }
@@ -119,13 +113,5 @@
 
   .plan-description {
     height: 148px;
-  }
-
-  .button {
-    padding: 16px 38px;
-  }
-
-  .button--with-border {
-    padding: 16px 37px;
   }
 }
