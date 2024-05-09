@@ -1,0 +1,263 @@
+.proposal-container {
+  padding: 40px 20px 64px;
+  border-radius: 16px;
+  background: linear-gradient(
+    85deg,
+    var(--primary-accent-color) 2.25%,
+    var(--accent-color) 131.25%
+  );
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-container {
+    padding: 64px 18px 92px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-container {
+    padding: 64px 64px 142px;
+  }
+}
+
+.proposal-title {
+  margin-bottom: 65px;
+  color: var(--primary-color);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-title {
+    margin-bottom: 83px;
+    padding: 0 14px;
+    font-size: 60px;
+    line-height: 1.16;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-title {
+    margin-bottom: 133px;
+    padding: 0;
+    max-width: 776px;
+  }
+}
+
+.text-color {
+  color: var(--accent-color);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-color {
+    font-size: 60px;
+    line-height: 1.16;
+  }
+}
+
+.proposal-cards-container {
+  position: relative;
+}
+
+.proposal-cards-container::after,
+.proposal-cards-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 295px;
+  height: 408px;
+  border-radius: 16px;
+}
+
+.proposal-cards-container::after {
+  z-index: 2;
+  background-color: var(--secondary-bg-color);
+  transform: rotate(-9deg);
+}
+
+.proposal-cards-container::before {
+  z-index: 1;
+  background-color: var(--secondary-color);
+  transform: rotate(11deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-cards-container::after,
+  .proposal-cards-container::before {
+    width: 668px;
+    height: 500px;
+    border-radius: 38px;
+  }
+
+  .proposal-cards-container::after {
+    top: 2px;
+    transform: rotate(-10deg);
+  }
+
+  .proposal-cards-container::before {
+    top: 6px;
+    left: 8px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-cards-container::after {
+    left: -23px;
+    bottom: -2px;
+    width: 1050px;
+    height: 463px;
+    transform: rotate(-8deg);
+  }
+
+  .proposal-cards-container::before {
+    top: 47px;
+    left: 5px;
+    width: 1011px;
+    height: 402px;
+  }
+}
+
+.proposal-card {
+  position: relative;
+  z-index: 3;
+  padding: 40px 20px;
+  background-color: var(--primary-color);
+  border-radius: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-card {
+    padding: 64px 187px 64px 32px;
+    background-image: url(../../img/proposal-to-leave-an-application/tall-stack-of-books.png);
+    background-repeat: no-repeat;
+    background-size: 214px 263px;
+    background-position: 503px 173px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .proposal-card {
+    background-image: url(../../img/proposal-to-leave-an-application/tall-stack-of-books@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-card {
+    padding: 64px 306px 64px 64px;
+    background-position: 810px 129px;
+  }
+}
+
+.proposal-card-title {
+  margin-bottom: 20px;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-card-title {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-card-title {
+    margin-bottom: 40px;
+  }
+}
+
+.proposal-card-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-card-item {
+    gap: 16px;
+  }
+}
+
+.proposal-card-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.proposal-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-accent-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.proposal-check-icon {
+  width: 10px;
+  height: 8px;
+  fill: var(--primary-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-check-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.proposal-card-descr {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-card-descr {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.proposal-button {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-button {
+    margin-top: 32px;
+    max-width: 306px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-button {
+    margin-top: 40px;
+  }
+}
