@@ -143,7 +143,9 @@
     border-radius: 30px;
   }
 
-  @media (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .proposal-card {
       background-image: url(../../img/proposal-to-leave-an-application/tall-stack-of-books@2x.png);
     }
