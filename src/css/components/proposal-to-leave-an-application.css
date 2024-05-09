@@ -1,3 +1,240 @@
-.section.pre {
-    background-color: black;
+.proposal-container {
+  padding: 40px 20px;
+  border-radius: 16px;
+  background: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-container {
+    padding: 64px 32px 30px 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-container {
+    padding: 64px;
+  }
+}
+
+.proposal-title {
+  margin-bottom: 65px;
+  color: #fff;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-title {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 1.16;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-title {
+    margin-bottom: 72px;
+  }
+}
+
+.text-color {
+  color: #bee8cc;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-color {
+    font-size: 60px;
+    line-height: 1.16;
+  }
+}
+
+.proposal-cards-container {
+  position: relative;
+}
+
+.proposal-cards-container::after,
+.proposal-cards-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 295px;
+  height: 408px;
+  border-radius: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-cards-container::after,
+  .proposal-cards-container::before {
+    width: 645px;
+    height: 460px;
+    border-radius: 38px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-cards-container::after,
+  .proposal-cards-container::before {
+    width: 1024px;
+    height: 471px;
+    top: 6%;
+  }
+}
+
+.proposal-cards-container::after {
+  z-index: 2;
+  background-color: var(--secondary-bg-color);
+  transform: rotate(-9deg);
+}
+
+.proposal-cards-container::before {
+  z-index: 1;
+  background-color: var(--secondary-color);
+  transform: rotate(11deg);
+}
+
+.proposal-card {
+  position: relative;
+  z-index: 3;
+  padding: 40px 20px;
+  background-color: var(--primary-color);
+  border-radius: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-card {
+    padding: 32px 155px 64px 32px;
+    background-image: url(../../img/proposal-to-leave-an-application/tall-stack-of-books.png);
+    background-repeat: no-repeat;
+    background-size: 214px 263px;
+    background-position: 115% 50%;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .proposal-card {
+    background-image: url(../../img/proposal-to-leave-an-application/tall-stack-of-books@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-card {
+    padding: 64px 306px 64px 64px;
+    background-position: 100% 50%;
+  }
+}
+
+.proposal-card-title {
+  margin-bottom: 20px;
+  color: #121417;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-card-title {
+    margin-bottom: 32px;
+    font-size: 40px;
+    letter-spacing: -0.04em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-card-title {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 1.16;
+    letter-spacing: -0.04em;
+  }
+}
+
+.proposal-card-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-card-item {
+    gap: 16px;
+  }
+}
+
+.proposal-card-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.proposal-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4dc274;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.proposal-check-icon {
+  width: 10px;
+  height: 8px;
+  fill: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-check-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.proposal-card-descr {
+  color: #121417;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-card-descr {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.proposal-button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-button {
+    margin-top: 32px;
+    max-width: 306px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-button {
+    margin-top: 40px;
+  }
 }
