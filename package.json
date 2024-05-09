@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.5.2",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "prettier": "3.2.5",
+    "vite": "^4.5.2"
   },
   "license": "ISC",
   "dependencies": {

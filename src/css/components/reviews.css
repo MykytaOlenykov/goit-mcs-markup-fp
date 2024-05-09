@@ -1,4 +1,6 @@
-
+.cont-reviews {
+    padding: 40px 20px 80px 20px; 
+}
 .card-reviews {
     border-radius: 16px;
     background:  var(--primary-bg-color);
@@ -15,10 +17,18 @@
 }
 
 .card-reviews__img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+
+}
+
+.thumb-reviews {
     border-radius: 50%;
     margin-right: 8px;
     width: 50px;
     height: 50px;
+    overflow: hidden;
 }
 
 .card-reviews__name {
@@ -45,9 +55,8 @@
     font-size: 14px;
     line-height: 1.71429;
     color: var(--secondary-text-color);
-    margin-left: 14px;
-    margin-right: 14px;
-
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .reviews-divwithcards > :nth-child(n+2) {
@@ -66,6 +75,10 @@
         gap: 32px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .cont-reviews {
+        padding: 50px 32px 100px 32px; 
     }
 
     .card-reviews {
@@ -92,6 +105,10 @@
 @media screen and (min-width: 1280px)  {
     .reviews-divwithcards > :nth-child(n) {
         display: block;  }
+
+        .cont-reviews {
+            padding: 75px 128px 150px 128px; 
+        }
 
     .card-reviews {
         width: calc((100%-64px)/3);}
