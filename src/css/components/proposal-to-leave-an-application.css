@@ -142,11 +142,11 @@
     background-position: 503px 173px;
     border-radius: 30px;
   }
-}
 
-@media (min-resolution: 192dpi) {
-  .proposal-card {
-    background-image: url(../../img/proposal-to-leave-an-application/tall-stack-of-books@2x.png);
+  @media (min-resolution: 192dpi) {
+    .proposal-card {
+      background-image: url(../../img/proposal-to-leave-an-application/tall-stack-of-books@2x.png);
+    }
   }
 }
 
