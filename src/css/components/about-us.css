@@ -23,8 +23,8 @@
 }
 @media only screen and (min-width: 1280px) {
   .about-us-features-list {
-    grid-template-columns: 1.4fr 1.4fr 1fr;
-    padding: 0px 65px;
+    justify-content: center;
+    grid-template-columns: 325px 325px 310px;
   }
 }
 .about-list-item {
@@ -50,7 +50,9 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .about-list-item-last {
     background-image: url(/img/about-us/memoji@2x.png);
   }
