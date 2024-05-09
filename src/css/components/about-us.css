@@ -41,7 +41,7 @@
 
 .about-list-item-last {
   display: block;
-  min-width: 335px;
+  width: 100%;
   min-height: 313px;
   background-color: var(--primary-accent-color);
   background-image: url(/img/about-us/memoji@1x.png);
@@ -72,7 +72,6 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    min-width: 310px;
   }
 }
 
