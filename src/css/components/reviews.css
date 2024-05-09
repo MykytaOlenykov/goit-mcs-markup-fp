@@ -1,0 +1,118 @@
+.cont-reviews {
+  padding: 40px 20px 80px 20px;
+}
+.card-reviews {
+  border-radius: 16px;
+  background: var(--primary-bg-color);
+  padding: 20px;
+}
+
+.card-reviews__student {
+  padding: 14px;
+  border-radius: 8px;
+  background: var(--primary-accent-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-reviews__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-reviews {
+  border-radius: 50%;
+  margin-right: 8px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.card-reviews__name {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+  margin-bottom: 2px;
+}
+
+.card-reviews__who {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card-reviews__text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: var(--secondary-text-color);
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.reviews-divwithcards > :nth-child(n + 2) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-divwithcards > :nth-child(2) {
+    display: block;
+  }
+
+  .reviews-divwithcards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cont-reviews {
+    padding: 50px 32px 100px 32px;
+  }
+
+  .card-reviews {
+    border-radius: 30px;
+    padding: 32px 16px;
+    width: 336px;
+  }
+  .card-reviews__student {
+    padding: 14px;
+  }
+
+  .card-reviews__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 1.5;
+  }
+  .card-reviews__student {
+    margin-bottom: 32px;
+  }
+  .card-reviews {
+    width: calc((100%-32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews-divwithcards > :nth-child(n) {
+    display: block;
+  }
+
+  .cont-reviews {
+    padding: 75px 128px 150px 128px;
+  }
+
+  .card-reviews {
+    width: calc((100%-64px) / 3);
+  }
+}
