@@ -1,0 +1,130 @@
+.section-reviews {
+  padding-bottom: 80px;
+}
+
+.card-reviews {
+  border-radius: 16px;
+  background: var(--primary-bg-color);
+  padding: 20px;
+  min-height: 278px;
+}
+
+.card-reviews__student {
+  padding: 14px;
+  border-radius: 8px;
+  background: var(--primary-accent-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-reviews__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-reviews {
+  border-radius: 50%;
+  margin-right: 8px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.card-reviews__name {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+  margin-bottom: 2px;
+}
+
+.card-reviews__who {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card-reviews__text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: var(--secondary-text-color);
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.reviews-divwithcards > :nth-child(n + 2) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section-reviews {
+    padding-bottom: 100px;
+  }
+
+  .reviews-divwithcards > :nth-child(2) {
+    display: block;
+  }
+
+  .reviews-divwithcards {
+    display: flex;
+    gap: 32px;
+  }
+
+  .card-reviews {
+    border-radius: 30px;
+    padding: 32px 16px;
+    min-height: 326px;
+    flex-basis: 336px;
+  }
+  .card-reviews__student {
+    padding: 14px 16px;
+    margin-bottom: 32px;
+  }
+
+  .card-reviews__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 1.5;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-reviews {
+    padding-bottom: 150px;
+  }
+
+  .reviews-section-description {
+    margin: 0 auto 64px;
+    width: 647px;
+  }
+
+  .reviews-divwithcards {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .reviews-divwithcards > :nth-child(n) {
+    display: block;
+  }
+
+  .cont-reviews {
+    padding: 0 64px;
+  }
+
+  .card-reviews {
+    flex-basis: 320px;
+  }
+}
