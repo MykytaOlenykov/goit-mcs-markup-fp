@@ -100,7 +100,8 @@
   border-radius: 50%;
   background-color: var(--primary-color);
 
-  transition: background-color var(--duration) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    transform var(--duration) var(--timing-function);
 }
 
 @media screen and (min-width: 768px) {
@@ -114,10 +115,18 @@
   }
 }
 
-.hero__scroll:hover,
-.hero__scroll:focus {
-  transform: translateY(1px);
-  background-color: var(--primary-accent-color);
+@media (hover: none) {
+  .hero__scroll:active {
+    transform: translateY(1px);
+    background-color: var(--primary-accent-color);
+  }
+}
+
+@media (hover: hover) {
+  .hero__scroll:hover {
+    transform: translateY(1px);
+    background-color: var(--primary-accent-color);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -131,8 +140,7 @@
 
 .hero__scroll--down {
   fill: var(--primary-accent-color);
-  transition: fill var(--duration) var(--timing-function),
-    transform var(--duration) var(--timing-function);
+  transition: fill var(--duration) var(--timing-function);
 }
 
 @media screen and (min-width: 768px) {
@@ -142,9 +150,16 @@
   }
 }
 
-.hero__scroll:hover .hero__scroll--down,
-.hero__scroll:focus .hero__scroll--down {
-  fill: var(--primary-color);
+@media (hover: none) {
+  .hero__scroll:active .hero__scroll--down {
+    fill: var(--primary-color);
+  }
+}
+
+@media (hover: hover) {
+  .hero__scroll:hover .hero__scroll--down {
+    fill: var(--primary-color);
+  }
 }
 
 .hero__bg-image {
