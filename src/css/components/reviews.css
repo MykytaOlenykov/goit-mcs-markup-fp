@@ -60,22 +60,13 @@
   padding-right: 14px;
 }
 
-.reviews-divwithcards > :nth-child(n + 2) {
-  display: none;
+.reviews-divwithcards {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
   .section-reviews {
     padding-bottom: 100px;
-  }
-
-  .reviews-divwithcards > :nth-child(2) {
-    display: block;
-  }
-
-  .reviews-divwithcards {
-    display: flex;
-    gap: 32px;
   }
 
   .card-reviews {
@@ -110,18 +101,8 @@
     width: 647px;
   }
 
-  .reviews-divwithcards {
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .reviews-divwithcards > :nth-child(n) {
-    display: block;
-  }
-
   .cont-reviews {
-    padding: 0 64px;
+    padding: 0 128px;
   }
 
   .card-reviews {
