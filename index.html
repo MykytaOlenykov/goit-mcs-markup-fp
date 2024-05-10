@@ -7,7 +7,7 @@
     <title>EnglishExcellence</title>
     
     <script type="module" crossorigin src="/goit-mcs-markup-fp/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-mcs-markup-fp/assets/index-1dac5b6e.css">
+    <link rel="stylesheet" href="/goit-mcs-markup-fp/assets/index-58ac9694.css">
   </head>
   <body>
     <header>
@@ -20,26 +20,28 @@
     <main>
       <!-- Hero -->
       <section id="hero" class="hero">
-  <div class="container hero__container hero__bg-image">
-    <h1 class="hero__title">
-      Discover the joy of learning
-      <span class="hero__title--accent">English</span> with us!
-    </h1>
-    <a
-      class="link link__leave-an-application button"
-      href="#leave-an-application"
-      >Leave an application</a
-    >
-    <a class="link hero__scroll" href="#footer">
-      <svg
-        class="hero__scroll--down"
-        width="20"
-        height="20"
-        aria-label="scroll down icon"
+  <div class="container">
+    <div class="hero__container hero__bg-image">
+      <h1 class="hero__title">
+        Discover the joy of learning
+        <span class="hero__title--accent">English</span> with us!
+      </h1>
+      <a
+        class="link link__leave-an-application button"
+        href="#leave-an-application"
+        >Leave an application</a
       >
-        <use href="/goit-mcs-markup-fp/assets/icons-4024a151.svg#arrow"></use>
-      </svg>
-    </a>
+      <a id="anchor" class="link hero__scroll" href="#contacts">
+        <svg
+          class="hero__scroll--down"
+          width="20"
+          height="20"
+          aria-label="scroll down icon"
+        >
+          <use href="/goit-mcs-markup-fp/assets/icons-4024a151.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -509,7 +511,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer id="contacts" class="footer">
   <div class="container">
     <div class="footer-logo-address">
       <a
@@ -518,7 +520,7 @@
         aria-label="logo english learning site"
         >english<span class="footer-logo-accent">excellence</span>.</a
       >
-      <div class="footer-address">
+      <address class="footer-address">
         <ul class="footer-address-list">
           <li class="footer-address-list-item">
             <p class="footer-address-text">Phone number:</p>
@@ -541,46 +543,51 @@
             >
           </li>
         </ul>
-      </div>
+      </address>
     </div>
     <div class="footer-navigation">
       <ul class="footer-navigation-list">
         <li class="footer-navigation-list-item">
           <a
+            id="anchor"
             class="footer-navigation-link"
-            href="#"
+            href="#about-us"
             aria-label="link to About us section"
             >About us</a
           >
         </li>
         <li class="footer-navigation-list-item">
           <a
+            id="anchor"
             class="footer-navigation-link"
-            href="#"
+            href="#our-lessons"
             aria-label="link to Our lesson section"
             >Our lessons</a
           >
         </li>
         <li class="footer-navigation-list-item">
           <a
+            id="anchor"
             class="footer-navigation-link"
-            href="#"
+            href="#our-teachers"
             aria-label="link to Teachers section"
             >Teachers</a
           >
         </li>
         <li class="footer-navigation-list-item">
           <a
+            id="anchor"
             class="footer-navigation-link"
-            href="#"
+            href="#reviews"
             aria-label="link to Reviews section"
             >Reviews</a
           >
         </li>
         <li class="footer-navigation-list-item">
           <a
+            id="anchor"
             class="footer-navigation-link"
-            href="#"
+            href="#contacts"
             aria-label="link to Contact us section"
             >Contact us</a
           >
@@ -589,7 +596,7 @@
     </div>
     <div>
       <ul class="footer-social-list">
-        <li class="footer-social-list-item">
+        <li>
           <a
             class="footer-social-link"
             href="https://www.facebook.com/goITclub/"
@@ -602,7 +609,7 @@
             </svg>
           </a>
         </li>
-        <li class="footer-social-list-item">
+        <li>
           <a
             class="footer-social-link"
             href="https://www.instagram.com/goitclub/"
@@ -615,7 +622,7 @@
             </svg>
           </a>
         </li>
-        <li class="footer-social-list-item">
+        <li>
           <a
             class="footer-social-link"
             href="https://www.youtube.com/c/GoIT"
@@ -632,7 +639,7 @@
     </div>
     <div class="footer-copyright-policies">
       <div class="footer-copyright">
-        <p>©2023 English Excellence. All rights reserved.</p>
+        <p>&#169;2023 English Excellence. All rights reserved.</p>
       </div>
       <div class="footer-policies">
         <p>Privacy Policy</p>
