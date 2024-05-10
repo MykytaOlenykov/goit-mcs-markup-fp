@@ -48,7 +48,6 @@
 }
 
 .hero__container {
-  max-width: 335px;
   padding: 425px 20px 72px;
 
   position: relative;
@@ -69,7 +68,7 @@
 }
 
 .link__leave-an-application {
-  width: 295px;
+  width: 100%;
   min-height: 52px;
 
   text-align: center;

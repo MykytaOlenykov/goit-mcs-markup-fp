@@ -1,1 +1,1 @@
-import './js/smooth-anchor';
+import './js/smooth-scroll';
