@@ -1,2 +1,2 @@
-import './js/smooth-anchor';
+import './js/smooth-scroll';
 import './js/burger-menu';
