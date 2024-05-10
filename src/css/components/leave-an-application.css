@@ -46,6 +46,10 @@
   transition: var(--timing-function);
 }
 
+.leave-an-application__form-input:focus {
+  border-color: var(--primary-accent-color);
+}
+
 .leave-an-application__form-input--comment {
   height: 94px;
 }
