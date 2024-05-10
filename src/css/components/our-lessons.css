@@ -73,7 +73,7 @@
   }
 
   .plan-card {
-    width: 336px;
+    width: calc((100% - 32px) / 2);
     height: 404px;
     border-radius: 30px;
     padding: 32px 16px;
