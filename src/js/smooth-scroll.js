@@ -1,7 +1,8 @@
 document.body.addEventListener('click', e => {
-  if (e.target.getAttribute('id') === 'anchor') {
+  const { target } = e;
+  if (target.classList.contains('js-anchor')) {
     e.preventDefault();
-    smoothScroll(e.target);
+    smoothScroll(target);
   }
 });
 
