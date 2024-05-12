@@ -1,4 +1,4 @@
-const animationDuration = 250;
+import { toggleModal } from './common.js';
 
 const refs = {
   openBurgerBtn: document.querySelector('[data-burger-open]'),
@@ -9,35 +9,10 @@ const refs = {
   body: document.querySelector('body'),
 };
 
-const handleZIndex = () => {
-  if (refs.burgerMenu.style.zIndex === '100') {
-    setTimeout(() => {
-      refs.burgerMenu.style.zIndex = '-1';
-    }, animationDuration);
-  } else {
-    refs.burgerMenu.style.zIndex = '100';
-  }
-};
-
-const handleBodyOverflow = () => {
-  if (refs.burgerMenu.classList.contains('is-hidden')) {
-    refs.body.style.overflow = 'auto';
-  } else {
-    refs.body.style.overflow = 'hidden';
-  }
-};
-
-const toggleBurger = () => {
-  refs.burgerMenu.classList.toggle('is-hidden');
-
-  handleBodyOverflow();
-  handleZIndex();
-};
-
-refs.openBurgerBtn.addEventListener('click', toggleBurger);
-refs.closeBurgerBtn.addEventListener('click', toggleBurger);
+refs.openBurgerBtn.addEventListener('click', () => toggleModal(refs.burgerMenu));
+refs.closeBurgerBtn.addEventListener('click', () => toggleModal(refs.burgerMenu));
 refs.navLinks.forEach(link => {
-  link.addEventListener('click', toggleBurger);
+  link.addEventListener('click', () => toggleModal(refs.burgerMenu));
 });
 
 // Outside click
@@ -50,12 +25,12 @@ window.addEventListener('click', e => {
     return;
   }
 
-  toggleBurger();
+  toggleModal(refs.burgerMenu)
 });
 
 window.matchMedia('(min-width: 1280px)').addEventListener('change', e => {
   if (!e.matches) return;
   if (!refs.burgerMenu.classList.contains('is-hidden')) {
-    toggleBurger();
+    toggleModal(refs.burgerMenu)
   }
 });
