@@ -7,9 +7,9 @@
     <title>EnglishExcellence</title>
     
     <script type="module" crossorigin src="/goit-mcs-markup-fp/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-mcs-markup-fp/assets/vendor-35f0825b.js">
-    <link rel="stylesheet" href="/goit-mcs-markup-fp/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/goit-mcs-markup-fp/assets/index-7c9a97bc.css">
+    <link rel="modulepreload" crossorigin href="/goit-mcs-markup-fp/assets/vendor-ad4c6880.js">
+    <link rel="stylesheet" href="/goit-mcs-markup-fp/assets/vendor-789067e1.css">
+    <link rel="stylesheet" href="/goit-mcs-markup-fp/assets/index-5980a832.css">
   </head>
   <body>
     <header>
@@ -154,7 +154,7 @@
 
     <main>
       <!-- Hero -->
-      <section id="hero" class="hero">
+      <section id="hero" class="hero" data-aos="fade-up">
   <div class="container">
     <div class="hero__container hero__bg-image">
       <h1 class="hero__title">
@@ -182,7 +182,7 @@
 
 
       <!-- About us -->
-      <section id="about-us" class="section">
+      <section id="about-us" class="section" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title">About <span class="underline">Us</span></h2>
 
@@ -225,7 +225,7 @@
 
 
       <!-- Our lessons -->
-      <section id="our-lessons" class="section">
+      <section id="our-lessons" class="section" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title">Our <span class="underline">lessons</span></h2>
     <p class="section-description our-lessons-section-description">
@@ -285,7 +285,7 @@
 
 
       <!-- Proposal to leave an application -->
-      <section id="proposal-to-leave-an-application" class="section">
+      <section id="proposal-to-leave-an-application" class="section" data-aos="fade-up">
   <h2 class="visually-hidden">Proposal to leave an application</h2>
   <div class="container">
     <div class="proposal-container">
@@ -345,7 +345,7 @@
 
 
       <!-- Our teachers -->
-      <section id="our-teachers" class="section">
+      <section id="our-teachers" class="section" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title">
       Meet our <span class="underline"> teachers </span>
@@ -435,7 +435,7 @@
 
 
       <!-- Leave an application -->
-      <section id="leave-an-application" class="section">
+      <section id="leave-an-application" class="section" data-aos="fade-up">
   <div class="container leave-an-application__container">
     <h2 class="section-title">
       Leave an <span class="underline">application</span>
@@ -455,7 +455,7 @@
           this joyful event with you.
         </p>
       </div>
-      <form class="leave-an-application__form">
+      <form class="leave-an-application__form" data-application-form>
         <div class="leave-an-application__form-container">
           <ul class="leave-an-application__input-list">
             <li>
@@ -482,6 +482,7 @@
                 type="tel"
                 name="user-phone"
                 placeholder="Phone"
+                data-phone
                 required
               />
             </li>
@@ -569,7 +570,7 @@
 
 
       <!-- Reviews -->
-      <section id="reviews" class="section section-reviews">
+      <section id="reviews" class="section section-reviews" data-aos="fade-up">
   <div class="container cont-reviews">
     <h2 class="section-title">
       What our <span class="underline">students</span> say
@@ -648,6 +649,31 @@
   </div>
 </section>
 
+
+      <!-- Form modal -->
+      <div class="form-modal is-hidden" data-form-result-modal>
+  <div class="form-modal__content" data-form-result-modal-content>
+    <button
+      class="form-modal__close-btn"
+      data-form-result-modal-close
+      aria-label="Button for close mobile menu"
+    >
+      <svg>
+        <use href="/goit-mcs-markup-fp/assets/icons-4024a151.svg#close"></use>
+      </svg>
+    </button>
+
+    <h2 class="form-modal__title" data-form-result-modal-title></h2>
+    <p data-form-result-modal-text></p>
+
+    <button
+      class="button"
+      data-form-result-modal-close
+    >
+      Got it
+    </button>
+  </div>
+</div>
     </main>
 
     <footer id="contacts" class="footer">
